@@ -1,9 +1,11 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 
-// アクセスを許可するメールアドレスのリスト（空にすると全Googleアカウントを許可）
-// 特定のメールだけ許可したい場合は追加：["yourname@gmail.com"]
-const ALLOWED_EMAILS: string[] = [];
+// アクセスを許可するメールアドレスのリスト
+// 追加したい場合はカンマ区切りで増やす：["a@gmail.com", "b@gmail.com"]
+const ALLOWED_EMAILS: string[] = [
+  "adachi1972@gmail.com",
+];
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
