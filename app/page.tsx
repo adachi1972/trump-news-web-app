@@ -3,11 +3,12 @@ import { MarketOverview } from "@/components/MarketOverview";
 import { MarketChart } from "@/components/MarketChart";
 import { EventsTimeline } from "@/components/EventsTimeline";
 import { Separator } from "@/components/ui/separator";
+import { auth, signOut } from "@/auth";
 
 export const revalidate = 3600;
 
 export default async function Home() {
-  const indices = await fetchAllIndices();
+  const [indices, session] = await Promise.all([fetchAllIndices(), auth()]);
   const updatedAt = new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" });
 
   return (
@@ -21,9 +22,39 @@ export default async function Home() {
               トランプ大統領の発言・政策が市場に与えた影響を追跡
             </p>
           </div>
-          <p className="text-[11px] text-muted-foreground hidden sm:block">
-            更新: {updatedAt} JST
-          </p>
+          <div className="flex items-center gap-3">
+            <p className="text-[11px] text-muted-foreground hidden sm:block">
+              更新: {updatedAt} JST
+            </p>
+            {session?.user && (
+              <div className="flex items-center gap-2">
+                {session.user.image && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={session.user.image}
+                    alt={session.user.name ?? "user"}
+                    className="h-7 w-7 rounded-full border"
+                  />
+                )}
+                <span className="text-xs text-muted-foreground hidden md:block">
+                  {session.user.name}
+                </span>
+                <form
+                  action={async () => {
+                    "use server";
+                    await signOut({ redirectTo: "/login" });
+                  }}
+                >
+                  <button
+                    type="submit"
+                    className="text-xs text-muted-foreground hover:text-foreground border rounded px-2 py-1 transition-colors"
+                  >
+                    ログアウト
+                  </button>
+                </form>
+              </div>
+            )}
+          </div>
         </div>
       </header>
 
