@@ -9,19 +9,36 @@ export interface TrumpEvent {
 }
 
 export const trumpEvents: TrumpEvent[] = [
+  // ── 2025年1月 ──
   {
     date: "2025-01-20",
     title: "第2次政権発足",
-    description: "トランプ大統領（第47代）就任。初日に複数の大統領令に署名",
+    description: "トランプ大統領（第47代）就任。「America First Trade Policy」覚書に署名。不法移民・フェンタニル密輸に関する国家緊急事態を宣言",
     category: "政治",
     impact: "high",
   },
+  // ── 2025年2月 ──
   {
     date: "2025-02-01",
     title: "カナダ・メキシコ関税発動",
-    description: "カナダ・メキシコに25%関税（エネルギーは10%）発動を決定",
+    description: "カナダ・メキシコに25%関税（エネルギーは10%）発動。USTRに全貿易関係の見直しを指示",
     category: "関税",
     impact: "high",
+  },
+  {
+    date: "2025-02-28",
+    title: "ゼレンスキー訪米・決裂",
+    description: "ゼレンスキー大統領がホワイトハウスを訪問。トランプと激しく対立しウクライナ支援見直しへ",
+    category: "外交",
+    impact: "high",
+  },
+  // ── 2025年3月 ──
+  {
+    date: "2025-03-04",
+    title: "鉄鋼・アルミ追加関税",
+    description: "鉄鋼・アルミニウムへのSection 232関税を25%から50%に引き上げ",
+    category: "関税",
+    impact: "medium",
   },
   {
     date: "2025-03-12",
@@ -30,46 +47,127 @@ export const trumpEvents: TrumpEvent[] = [
     category: "外交",
     impact: "medium",
   },
+  // ── 2025年4月 ──
   {
     date: "2025-04-02",
     title: "Liberation Day",
-    description: "全貿易相手国に相互関税発動。S&P500が7週間で約20%下落",
+    description: "80カ国超に相互関税発動（ベトナム46%・EU20%等）。S&P500が7週間で約20%下落、世界市場で10兆ドル消失",
     category: "関税",
     impact: "high",
   },
   {
     date: "2025-04-10",
-    title: "EU停戦・交渉優先",
-    description: "EUが対抗措置を90日間停止し交渉ルートを優先",
+    title: "EU90日停戦",
+    description: "EUが対抗関税を90日間停止し交渉ルートを優先。市場が急反発",
     category: "外交",
     impact: "medium",
   },
   {
+    date: "2025-04-15",
+    title: "重要鉱物調査命令",
+    description: "加工済み重要鉱物・半導体の輸入が国家安全保障に与える影響の調査を商務省に命令",
+    category: "政治",
+    impact: "low",
+  },
+  // ── 2025年5月 ──
+  {
     date: "2025-05-12",
-    title: "米中90日合意",
-    description: "米中が90日間の相互関税引き下げに合意（125%→10%）",
+    title: "米中90日関税停戦",
+    description: "米中が90日間の相互関税引き下げに合意（125%→10%）。市場が大幅上昇",
     category: "外交",
     impact: "high",
   },
+  // ── 2025年6月 ──
+  {
+    date: "2025-06-15",
+    title: "銅・半導体・木材に新関税",
+    description: "銅50%・半導体25%・木材10%の新たなSection 232関税を発動",
+    category: "関税",
+    impact: "medium",
+  },
+  // ── 2025年7月 ──
+  {
+    date: "2025-07-04",
+    title: "One Big Beautiful Bill 署名",
+    description: "大型減税・歳出削減法案「One Big Beautiful Bill Act」に署名。第2次政権最大の立法成果",
+    category: "政治",
+    impact: "high",
+  },
+  // ── 2025年9月 ──
+  {
+    date: "2025-09-15",
+    title: "木材・家具追加関税",
+    description: "針葉樹木材10%・キッチンキャビネット等25%の関税を10月14日から発動と発表",
+    category: "関税",
+    impact: "low",
+  },
+  // ── 2025年10月 ──
+  {
+    date: "2025-10-01",
+    title: "国際貿易裁判所 IEEPA違憲判断",
+    description: "米国際貿易裁判所がIEEPAに基づく関税権限を違憲と判断。関税の法的根拠が揺らぐ",
+    category: "法律",
+    impact: "high",
+  },
+  {
+    date: "2025-10-20",
+    title: "ゼレンスキーに領土譲歩要求",
+    description: "トランプがゼレンスキー大統領と会談し、ロシアへの領土譲歩を要求。NATO同盟国が反発",
+    category: "外交",
+    impact: "medium",
+  },
+  // ── 2025年11月 ──
+  {
+    date: "2025-11-01",
+    title: "連邦巡回裁もIEEPA違憲支持",
+    description: "連邦巡回控訴裁判所が国際貿易裁判所の判断を支持。IEEPA関税の法的根拠が更に縮小",
+    category: "法律",
+    impact: "medium",
+  },
+  {
+    date: "2025-11-10",
+    title: "米中関税停戦を1年延長",
+    description: "米中が関税引き下げ（125%→10%）を2026年11月まで1年間延長することで合意",
+    category: "外交",
+    impact: "medium",
+  },
+  // ── 2025年12月 ──
   {
     date: "2025-12-01",
-    title: "台湾武器売却",
-    description: "台湾への111億ドル武器売却を発表。中国が強く反発",
+    title: "台湾 111億ドル武器売却",
+    description: "台湾への111億ドル規模の武器売却を発表。中国が強く反発し米中関係が悪化",
     category: "外交",
+    impact: "medium",
+  },
+  // ── 2026年1月 ──
+  {
+    date: "2026-01-14",
+    title: "半導体・鉱物輸入制限布告",
+    description: "加工済み重要鉱物・半導体の輸入制限に関する大統領布告を発令",
+    category: "関税",
     impact: "medium",
   },
   {
     date: "2026-01-15",
     title: "グリーンランド関税",
-    description: "グリーンランド問題でEU6カ国＋英国・ノルウェーに追加10%関税",
+    description: "グリーンランド問題でEU6カ国・英国・ノルウェーに追加10%関税。8カ国首脳が共同声明で反発",
     category: "関税",
     impact: "medium",
   },
+  // ── 2026年2月 ──
   {
     date: "2026-02-20",
     title: "最高裁 IEEPA 違憲判決",
-    description: "米最高裁がIEEPA関税権限を違憲と判断（6-3）。今後の関税発動余地が縮小",
+    description: "最高裁がIEEPA関税権限を違憲と判断（6-3）。トランプは貿易法Section 122に基づく10%世界一律関税に切り替え（150日間）",
     category: "法律",
+    impact: "high",
+  },
+  // ── 2026年4月 ──
+  {
+    date: "2026-04-02",
+    title: "医薬品に100%関税",
+    description: "特許医薬品・原材料に100%関税を賦課する大統領令に署名（EU・日本・韓国等は15%の優遇税率）",
+    category: "関税",
     impact: "high",
   },
 ];

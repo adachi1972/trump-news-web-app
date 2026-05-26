@@ -17,7 +17,7 @@ interface Props {
 
 export function MarketOverview({ indices }: Props) {
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
       {indices.map((idx) => {
         const up = idx.changePercent > 0;
         const flat = Math.abs(idx.changePercent) < 0.01;

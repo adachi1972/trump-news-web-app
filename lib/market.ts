@@ -7,11 +7,12 @@ export interface IndexMeta {
 }
 
 export const INDICES: IndexMeta[] = [
-  { key: "sp500",  symbol: "^GSPC",  label: "S&P 500",   unit: "pt",  color: "#2563eb" },
-  { key: "nasdaq", symbol: "^IXIC",  label: "Nasdaq",    unit: "pt",  color: "#7c3aed" },
-  { key: "dow",    symbol: "^DJI",   label: "Dow Jones", unit: "pt",  color: "#dc2626" },
-  { key: "usdjpy", symbol: "JPY=X",  label: "ドル円",    unit: "円",  color: "#d97706" },
-  { key: "oil",    symbol: "CL=F",   label: "WTI原油",   unit: "USD", color: "#059669" },
+  { key: "sp500",   symbol: "^GSPC",  label: "S&P 500",   unit: "pt",  color: "#2563eb" },
+  { key: "nasdaq",  symbol: "^IXIC",  label: "Nasdaq",    unit: "pt",  color: "#7c3aed" },
+  { key: "dow",     symbol: "^DJI",   label: "Dow Jones", unit: "pt",  color: "#dc2626" },
+  { key: "nikkei",  symbol: "^N225",  label: "日経平均",  unit: "pt",  color: "#e11d74" },
+  { key: "usdjpy",  symbol: "JPY=X",  label: "ドル円",    unit: "円",  color: "#d97706" },
+  { key: "oil",     symbol: "CL=F",   label: "WTI原油",   unit: "USD", color: "#059669" },
 ];
 
 export interface DayData {
