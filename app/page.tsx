@@ -2,7 +2,10 @@ import { fetchAllIndices } from "@/lib/market";
 import { MarketOverview } from "@/components/MarketOverview";
 import { MarketChart } from "@/components/MarketChart";
 import { EventsTimeline } from "@/components/EventsTimeline";
+import { SnsTimeline } from "@/components/SnsTimeline";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { auth, signOut } from "@/auth";
 
 export const revalidate = 3600;
@@ -78,10 +81,29 @@ export default async function Home() {
             <MarketChart indices={indices} />
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-              主要イベント年表
-            </h2>
-            <EventsTimeline />
+            <Card className="h-full">
+              <CardHeader className="pb-0 pt-4 px-4">
+                <CardTitle className="text-base">Trump 発言・イベント</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <Tabs defaultValue="events" className="w-full">
+                  <TabsList className="w-full rounded-none border-b bg-transparent h-9 px-4 justify-start gap-2">
+                    <TabsTrigger value="events" className="text-xs h-7 px-3">
+                      主要イベント
+                    </TabsTrigger>
+                    <TabsTrigger value="sns" className="text-xs h-7 px-3">
+                      SNS・会見発言
+                    </TabsTrigger>
+                  </TabsList>
+                  <TabsContent value="events" className="mt-0 px-4 pt-3">
+                    <EventsTimeline embedded />
+                  </TabsContent>
+                  <TabsContent value="sns" className="mt-0 px-4 pt-3">
+                    <SnsTimeline />
+                  </TabsContent>
+                </Tabs>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
