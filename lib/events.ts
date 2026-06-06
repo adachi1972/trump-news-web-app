@@ -170,6 +170,36 @@ export const trumpEvents: TrumpEvent[] = [
     category: "関税",
     impact: "high",
   },
+  {
+    date: "2026-04-08",
+    title: "イラン停戦成立",
+    description: "2月28日開始の米・イスラエル合同軍事作戦「Operation Epic Fury」から40日で停戦。イランの核施設・軍事インフラを標的とした大規模作戦が終結",
+    category: "外交",
+    impact: "high",
+  },
+  // ── 2026年5月 ──
+  {
+    date: "2026-05-07",
+    title: "Section 122関税無効",
+    description: "米国際貿易裁判所が世界一律10% Section 122関税を「法的根拠なし」と2対1で判断。政府は即日控訴し5月12日に連邦巡回裁が暫定的に徴収継続を認める",
+    category: "法律",
+    impact: "medium",
+  },
+  {
+    date: "2026-05-15",
+    title: "米中首脳会談合意",
+    description: "トランプが中国を国賓訪問し習近平と会談。農産物170億ドル/年購入・ボーイング200機・レアアース取引など大型合意を締結。両国の「戦略的安定」構築に合意",
+    category: "外交",
+    impact: "high",
+  },
+  // ── 2026年6月 ──
+  {
+    date: "2026-06-01",
+    title: "鉄鋼・銅関税再強化",
+    description: "アルミ・鉄鋼・銅の輸入関税を更に引き上げる大統領令に署名（6月8日発効）。国内製造業保護を一層強化",
+    category: "関税",
+    impact: "medium",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
