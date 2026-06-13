@@ -200,6 +200,20 @@ export const trumpEvents: TrumpEvent[] = [
     category: "関税",
     impact: "medium",
   },
+  {
+    date: "2026-06-03",
+    title: "連邦公務員解雇容易化令",
+    description: "GS-15以上を中心に約8,000人の連邦公務員を「Schedule Policy/Career」に再分類し解雇しやすくする大統領令に署名。官僚機構の政策実行責任を強化する狙い",
+    category: "政治",
+    impact: "medium",
+  },
+  {
+    date: "2026-06-06",
+    title: "イラン核交渉が一時停滞",
+    description: "60日停戦延長・ホルムズ海峡再開を条件とする核合意交渉でイランが一時離脱。補償金額・核物質管理の扱いが難航。トランプは「合意は近い」と強調しつつ圧力継続",
+    category: "外交",
+    impact: "medium",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
