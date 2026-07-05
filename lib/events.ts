@@ -214,6 +214,20 @@ export const trumpEvents: TrumpEvent[] = [
     category: "外交",
     impact: "medium",
   },
+  {
+    date: "2026-06-16",
+    title: "G7・ウクライナ支援合意",
+    description: "フランス・エビアンで開催のG7サミットでトランプがゼレンスキーと会談。ウクライナへの継続支援と対ロ制裁強化検討を盛り込んだ共同声明に署名",
+    category: "外交",
+    impact: "medium",
+  },
+  {
+    date: "2026-06-17",
+    title: "米・イラン覚書署名",
+    description: "G7後にトランプとイランのペゼシュキアン大統領が「イスラマバード覚書」に署名。60日停戦延長・ホルムズ海峡再開・核交渉継続の枠組みに合意",
+    category: "外交",
+    impact: "high",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
