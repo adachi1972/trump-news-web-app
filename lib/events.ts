@@ -228,6 +228,34 @@ export const trumpEvents: TrumpEvent[] = [
     category: "外交",
     impact: "high",
   },
+  {
+    date: "2026-06-22",
+    title: "DHS投票者DB差止判決",
+    description: "連邦判事Sooknananが、国土安全保障省(DHS)が市民権確認システム(SAVE)を改変し有権者名簿の照合・削除に利用したことをプライバシー法違反等として差し止める判決",
+    category: "法律",
+    impact: "medium",
+  },
+  {
+    date: "2026-07-01",
+    title: "EU・米通商合意が発効",
+    description: "EU原産品に一律15%上限の関税を課す米・EU通商合意が発効。従来の通商拡大法232条・122条に基づく対EU措置に代替",
+    category: "関税",
+    impact: "medium",
+  },
+  {
+    date: "2026-07-07",
+    title: "米がイラン80拠点を空爆",
+    description: "イランがホルムズ海峡で商船3隻を攻撃したことを受け、米軍がイラン国内80以上の標的に空爆を実施。原油輸出制裁も再発動し、原油価格が急騰",
+    category: "外交",
+    impact: "high",
+  },
+  {
+    date: "2026-07-08",
+    title: "トランプ停戦「終了」宣言",
+    description: "NATOアンカラ首脳会議中、トランプはイランとの停戦は「終了した」と宣言し追加空爆を示唆。防衛費目標未達のスペインには全面的な通商停止を財務長官に指示",
+    category: "外交",
+    impact: "high",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
