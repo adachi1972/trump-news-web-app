@@ -383,6 +383,57 @@ export const trumpEvents: TrumpEvent[] = [
     category: "外交",
     impact: "medium",
   },
+  // ── 2026年9月 ──
+  {
+    date: "2026-09-29",
+    title: "AI自主監査協定を発表",
+    description: "主要AI企業が内部・外部監査を行う自主協定に署名したと発表。政府サービスを集約するAI対応サイトAmerica.govも公開した",
+    category: "政治",
+    impact: "medium",
+  },
+  // ── 2026年10月 ──
+  {
+    date: "2026-10-05",
+    title: "農業用軽油の免税拡大",
+    description: "農業などで使う赤色染料入り軽油の非課税利用を拡大する大統領令に署名。燃料費と物価の抑制を狙うと説明した",
+    category: "市場",
+    impact: "medium",
+  },
+  {
+    date: "2026-10-07",
+    title: "FRBクック氏調査委設置",
+    description: "住宅ローン申請を巡る虚偽記載疑惑について、FRBのリサ・クック理事を調査する委員会を設置。クック氏は不正を否定している",
+    category: "法律",
+    impact: "medium",
+  },
+  {
+    date: "2026-10-09",
+    title: "ロシア産軽油購入で合意",
+    description: "プーチン大統領との電話協議後、ロシア産軽油を米国と世界市場向けに購入する合意を発表。超党派議員から対ロ制裁政策との整合性を問う声が出た",
+    category: "外交",
+    impact: "high",
+  },
+  {
+    date: "2026-10-11",
+    title: "エネルギー停戦を発表",
+    description: "ロシアとウクライナがエネルギー施設への攻撃停止で合意したと発表。ただし詳細は示されず、ウクライナ側は発表後もロシアの攻撃が続いたと報告した",
+    category: "外交",
+    impact: "high",
+  },
+  {
+    date: "2026-10-12",
+    title: "政府広報CMに差止命令",
+    description: "連邦地裁が、政治的メッセージを含む政府資金のテレビ広告について一時差止命令を出した。政権は広告キャンペーンを終了する方針を示した",
+    category: "法律",
+    impact: "medium",
+  },
+  {
+    date: "2026-10-16",
+    title: "対ロ制裁法の適用猶予",
+    description: "ロシア産品への500%関税などを定めたグラハム制裁法の実施命令に署名する一方、国益を理由に同法の追加制裁・関税を当面猶予した",
+    category: "外交",
+    impact: "high",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
