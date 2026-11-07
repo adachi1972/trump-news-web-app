@@ -434,6 +434,55 @@ export const trumpEvents: TrumpEvent[] = [
     category: "外交",
     impact: "high",
   },
+  {
+    date: "2026-10-22",
+    title: "風力部品関税を見送り",
+    description: "商務省の安全保障審査（Section 232）を受け、風力発電ブレードなど風力エネルギー関連部品への関税賦課を見送る大統領令に署名した",
+    category: "関税",
+    impact: "low",
+  },
+  {
+    date: "2026-10-28",
+    title: "ロボット機械が安保リスク",
+    description: "商務省がロボット・産業機械の輸入は国家安全保障上のリスクと認定。トランプは関税賦課の代わりに主要貿易相手国との交渉を命じる大統領令に署名した",
+    category: "関税",
+    impact: "medium",
+  },
+  {
+    date: "2026-10-30",
+    title: "対カナダ関税対象を縮小",
+    description: "自動車関連の50%関税から合板・紙製品・農業機械など複数品目を除外する布告に署名。カナダとの貿易交渉進展を反映した措置",
+    category: "関税",
+    impact: "medium",
+  },
+  {
+    date: "2026-10-30",
+    title: "米中関税停戦を延長",
+    description: "2025年11月のブサン合意に基づく対中高関税の一時停止措置を11月10日まで維持。トランプのAPEC訪中を前にした措置で、ベースライン10%関税は継続",
+    category: "関税",
+    impact: "high",
+  },
+  {
+    date: "2026-11-04",
+    title: "中間選挙で共和党大敗",
+    description: "11月3日の中間選挙で民主党が上下両院を制圧。上院54議席以上・下院250超を獲得し、トランプの支持率は38%と大統領経験者の中間選挙時最低水準を記録",
+    category: "政治",
+    impact: "high",
+  },
+  {
+    date: "2026-11-06",
+    title: "スティーブン・ミラーが首席補佐官",
+    description: "スティーブン・ミラー政策顧問が11月9日付で次期首席補佐官に就任。スージー・ワイルズ現首席補佐官はトランプ政治組織の責任者に移行すると発表",
+    category: "政治",
+    impact: "medium",
+  },
+  {
+    date: "2026-11-07",
+    title: "米・イラン外交接触",
+    description: "トランプ大統領は「イランと話している」と明言。カタールの仲介でホルムズ海峡問題を含む包括的停戦の枠組み交渉が進行中。近日中の決断を示唆",
+    category: "外交",
+    impact: "high",
+  },
 ];
 
 export const categoryColors: Record<EventCategory, string> = {
